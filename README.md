@@ -1,4 +1,4 @@
-# Shopify React Frontend App
+# Shopify React Frontend App - Typescript
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 
