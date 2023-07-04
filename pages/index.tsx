@@ -7,19 +7,19 @@ import {
   Stack,
   Link,
   Text,
-} from "@shopify/polaris";
-import { TitleBar } from "@shopify/app-bridge-react";
-import { useTranslation, Trans } from "react-i18next";
+} from '@shopify/polaris'
+import { TitleBar } from '@shopify/app-bridge-react'
+import { useTranslation, Trans } from 'react-i18next'
 
-import { trophyImage } from "../assets";
+import { trophyImage } from '../assets'
 
-import { ProductsCard } from "../components";
+import { ProductsCard } from '../components'
 
 export default function HomePage() {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <Page narrowWidth>
-      <TitleBar title={t("HomePage.title")} primaryAction={null} />
+      <TitleBar title={t('HomePage.title')} primaryAction={null} />
       <Layout>
         <Layout.Section>
           <Card sectioned>
@@ -32,7 +32,7 @@ export default function HomePage() {
               <Stack.Item fill>
                 <TextContainer spacing="loose">
                   <Text as="h2" variant="headingMd">
-                    {t("HomePage.heading")}
+                    {t('HomePage.heading')}
                   </Text>
                   <p>
                     <Trans
@@ -56,7 +56,7 @@ export default function HomePage() {
                       }}
                     />
                   </p>
-                  <p>{t("HomePage.startPopulatingYourApp")}</p>
+                  <p>{t('HomePage.startPopulatingYourApp')}</p>
                   <p>
                     <Trans
                       i18nKey="HomePage.learnMore"
@@ -73,10 +73,10 @@ export default function HomePage() {
                 </TextContainer>
               </Stack.Item>
               <Stack.Item>
-                <div style={{ padding: "0 20px" }}>
+                <div style={{ padding: '0 20px' }}>
                   <Image
                     source={trophyImage}
-                    alt={t("HomePage.trophyAltText")}
+                    alt={t('HomePage.trophyAltText')}
                     width={120}
                   />
                 </div>
@@ -89,5 +89,5 @@ export default function HomePage() {
         </Layout.Section>
       </Layout>
     </Page>
-  );
+  )
 }

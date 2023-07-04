@@ -23,6 +23,26 @@
     "dist/*"
   ],
   "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off"
   }
